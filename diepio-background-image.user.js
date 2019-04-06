@@ -55,7 +55,7 @@ SOFTWARE.
     };
 
     background.image.src = backgroundImageURL;
-    background.image.onload = function() {
+    background.image.onload = function () {
         background.ready = true;
     };
 
@@ -73,12 +73,10 @@ SOFTWARE.
         return _fillText.apply(this, arguments);
     };
     let fillRect = function () {
-        if (arguments[2] > 1000 && arguments[3] > 1000){
-            if (background.ready == true){
-                this.fillStyle = "rgba(0,0,0,0)";
-                this.setTransform(1, 0, 0, 1, 0, 0);
-                this.drawImage(background.image, 0, 0, this.canvas.width, this.canvas.height);
-            }
+        if (arguments[2] > 1000 && arguments[3] > 1000 && background.ready){
+            this.fillStyle = "rgba(0,0,0,0)";
+            this.setTransform(1, 0, 0, 1, 0, 0);
+            this.drawImage(background.image, 0, 0, this.canvas.width, this.canvas.height);
         }
         return _fillRect.apply(this, arguments);
     };
