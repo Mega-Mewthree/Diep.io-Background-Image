@@ -16,7 +16,7 @@
 Configure the background image by setting the backgroundImageURL variable (after the copyright notice).
 
 Discord server: https://nebula.mooo.info/discord-invite
-GitHub: https://github.com/Mega-Mewthree/Diep.io-Background-Image/blob/master/diepio-background-image.user.js
+GitHub: https://github.com/Mega-Mewthree/Diep.io-Background-Image
 
 For a higher success rate:
 Go to Tampermonkey Settings, set Config Mode to Advanced, and then scroll down to Experimental and set Inject Mode to Instant.
